@@ -21,6 +21,7 @@ describe("DEMO QA", () => {
             FormPage.subjectInput().type("Economics{enter}");
             FormPage.hobbiesCheckbox().contains("Music").click();
             
+            FormPage.imageUpload().selectFile("cypress/e2e/files/fox.jpeg");
         });
     });
 })
