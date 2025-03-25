@@ -72,4 +72,8 @@ export class FormPage extends BasePage {
     static submit() {
         return cy.get("#submit");
     }
+
+    static dataCheck() {
+        return cy.get("td");
+    }
 }

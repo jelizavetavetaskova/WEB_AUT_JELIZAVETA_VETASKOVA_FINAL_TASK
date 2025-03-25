@@ -31,6 +31,17 @@ describe("DEMO QA", () => {
             FormPage.menu().contains("Delhi").click();
 
             FormPage.submit().click();
+
+            FormPage.dataCheck().contains("Student Name").next().should("contain.text", "Jacob Reid");
+            FormPage.dataCheck().contains("Student Email").next().should("contain.text", "reidjacob@gmail.com");
+            FormPage.dataCheck().contains("Gender").next().should("contain.text", "Male");
+            FormPage.dataCheck().contains("Mobile").next().should("contain.text", "1234567890");
+            FormPage.dataCheck().contains("Date of Birth").next().should("contain.text", "28 February,1930");
+            FormPage.dataCheck().contains("Subjects").next().should("contain.text", "Economics");
+            FormPage.dataCheck().contains("Hobbies").next().should("contain.text", "Music");
+            FormPage.dataCheck().contains("Picture").next().should("contain.text", "fox.jpeg");
+            FormPage.dataCheck().contains("Address").next().should("contain.text", "20 Cooper Square");
+            FormPage.dataCheck().contains("State and City").next().should("contain.text", "NCR Delhi");
         });
     });
 })
