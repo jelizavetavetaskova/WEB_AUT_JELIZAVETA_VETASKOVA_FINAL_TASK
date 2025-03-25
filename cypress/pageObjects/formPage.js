@@ -40,4 +40,16 @@ export class FormPage extends BasePage {
     static dayClick() {
         return cy.get(".react-datepicker__day--028").not(".react-datepicker__day--outside-month");
     }
+
+    static subjectInput() {
+        return cy.get("#subjectsInput");
+    }
+
+    static hobbiesCheckbox() {
+        return cy.get(".custom-control-label");
+    }
+
+    static imageUpload() {
+        return cy.get("#uploadPicture");
+    }
 }

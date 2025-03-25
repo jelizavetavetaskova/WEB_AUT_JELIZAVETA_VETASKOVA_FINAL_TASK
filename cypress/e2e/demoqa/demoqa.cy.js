@@ -17,6 +17,10 @@ describe("DEMO QA", () => {
             FormPage.monthSelect().select("February");
             FormPage.yearSelect().select("1930");
             FormPage.dayClick().click();
+
+            FormPage.subjectInput().type("Economics{enter}");
+            FormPage.hobbiesCheckbox().contains("Music").click();
+            
         });
     });
 })
