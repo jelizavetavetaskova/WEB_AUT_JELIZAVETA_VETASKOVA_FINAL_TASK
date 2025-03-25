@@ -52,4 +52,24 @@ export class FormPage extends BasePage {
     static imageUpload() {
         return cy.get("#uploadPicture");
     }
+
+    static addressInput() {
+        return cy.get("#currentAddress");
+    }
+
+    static stateInput() {
+        return cy.get("#state");
+    }
+
+    static menu() {
+        return cy.get(".css-26l3qy-menu");
+    }
+
+    static cityInput() {
+        return cy.get("#city");
+    }
+
+    static submit() {
+        return cy.get("#submit");
+    }
 }

@@ -11,7 +11,7 @@ describe("DEMO QA", () => {
             FormPage.lastnameField().type("Reid");
             FormPage.emailField().type("reidjacob@gmail.com");
             FormPage.genderRadio().contains("Male").click();
-            FormPage.phonenoField().type("24925708");
+            FormPage.phonenoField().type("1234567890");
 
             FormPage.dateOfBirthInput().click();
             FormPage.monthSelect().select("February");
@@ -22,6 +22,15 @@ describe("DEMO QA", () => {
             FormPage.hobbiesCheckbox().contains("Music").click();
             
             FormPage.imageUpload().selectFile("cypress/e2e/files/fox.jpeg");
+
+            FormPage.addressInput().type("20 Cooper Square");
+            FormPage.stateInput().click();
+            FormPage.menu().contains("NCR").click();
+
+            FormPage.cityInput().click();
+            FormPage.menu().contains("Delhi").click();
+
+            FormPage.submit().click();
         });
     });
 })
